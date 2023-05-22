@@ -1,10 +1,10 @@
-# fx-wheelfitment
+# fx-fishing
 
-Setup/Kurulum
+# Setup/Kurulum
 
 server.cfg start fx-fishing
 
-Dependencies/Bağımlılıklar
+# Dependencies/Bağımlılıklar
 
 [qb-core](https://github.com/qbcore-framework/qb-core)
 
