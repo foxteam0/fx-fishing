@@ -10,15 +10,17 @@ end)
 
 
 RegisterNetEvent('balikitemver',function(itemname)
-	amount = 1
+src=source
+local xPlayer = QBCore.Functions.GetPlayer(src)
+		
+amount = 1
 	local random = math.random(1,5) 
 	xPlayer.Functions.RemoveItem('fishbait', random)
 
 	TriggerClientEvent("QBCore:Notify",source, "Balıklar Yemi Yedi", "error", 2500)
 
 
-src=source
-local xPlayer = QBCore.Functions.GetPlayer(src)
+
 xPlayer.Functions.AddItem(itemname,1)
 TriggerClientEvent('inventory:client:ItemBox',source, QBCore.Shared.Items[itemname], 'add')
 
