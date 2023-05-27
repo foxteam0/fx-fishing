@@ -43,9 +43,12 @@ AddEventHandler('sellfish', function(itemName, amount)
 		return
 	end
 if xItem then
-	xPlayer.Functions.AddMoney('cash', price, "Bank depost") -- banka
+--	xPlayer.Functions.AddMoney('cash', price, "Bank depost") -- teker teker satma yapmak için açın
+	xPlayer.Functions.AddMoney('cash', price * xItem.amount , "Bank depost") -- banka
+
 	TriggerClientEvent("QBCore:Notify",source, "Güzel iş biraz daha getir.", "success", 2500)
-	xPlayer.Functions.RemoveItem('codfish', amount)
+	xPlayer.Functions.RemoveItem('codfish', xItem.amount)
+--xPlayer.Functions.RemoveItem('codfish', amount) teker teker satma yapmak için açın
 
 else
 
