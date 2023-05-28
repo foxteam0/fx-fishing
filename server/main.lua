@@ -38,7 +38,7 @@ AddEventHandler('sellfish', function(itemName, amount)
 
 	local xPlayer = QBCore.Functions.GetPlayer(source)
 	local price = Shellitem['codfish']
-	local xItem = QBCore.Functions.HasItem(source,'codfish',Conifg.amount)
+	local xItem = QBCore.Functions.HasItem(source,'codfish',Config.amount)
 	if not price then
 		return
 	end
