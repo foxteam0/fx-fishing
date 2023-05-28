@@ -20,4 +20,4 @@ Config.balikmarketi = {
 
 
 
-Conifg.amount = 1 --// kaç tane balık satmak istedğiniz miktar / how many fish guards do you want quantity 
+Config.amount = 1 --// kaç tane balık satmak istedğiniz miktar / how many fish guards do you want quantity 
